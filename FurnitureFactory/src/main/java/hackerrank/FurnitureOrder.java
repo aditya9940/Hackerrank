@@ -10,8 +10,11 @@ public class FurnitureOrder implements FurnitureOrderInterface {
     /**
      * Initialize a new mapping of Furniture types to order quantities.
      */
+    private final HashMap<Furniture, Integer> furniture;
+    
     FurnitureOrder() {
         // TODO: Complete the constructor
+        furnitures = new HashMap<Furniture, Integer>();
     }
 
     public void addToOrder(final Furniture type, final int furnitureCount) {
